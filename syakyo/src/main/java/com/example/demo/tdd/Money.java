@@ -2,21 +2,27 @@ package com.example.demo.tdd;
 
 public abstract class Money {
   protected int amount;
+  protected String currency;
 
-  public static Money franc(int amount) {
-    return new Franc(amount);
+  public Money(int amount, String currency) {
+    this.amount = amount;
+    this.currency = currency;
+
   }
 
   abstract Money times(int multiplier);
-
-  public Money(int amount) {
-    this.amount = amount;
+  public String currency(){
+    return currency;
   }
+
 
   public static Money dollar(int amount) {
     return new Dollar(amount);
   }
 
+  public static Money franc(int amount) {
+    return new Franc(amount);
+  }
 
   public boolean equals(Object object) {
     Money money = (Money) object;
