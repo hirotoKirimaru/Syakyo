@@ -1,6 +1,7 @@
 package com.example.demo.tdd;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -106,5 +107,12 @@ public class MoneyTest {
     Expression sum = new Sum(fiveBucks, tenFranc).times(2);
     Money result = bank.reduce(sum, "USD");
     assertEquals(Money.dollar(20), result);
+  }
+
+  @Disabled("実装に踏み込みすぎたテスト")
+  @Test
+  public void testPlusSameCurrencyReturnsMoney(){
+    Expression sum = Money.dollar(1).plus(Money.dollar(1));
+    assertTrue(sum instanceof Money);
   }
 }
