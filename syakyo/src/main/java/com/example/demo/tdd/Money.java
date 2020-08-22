@@ -19,11 +19,11 @@ public class Money {
 
 
   public static Money dollar(int amount) {
-    return new Dollar(amount);
+    return new Money(amount, "USD");
   }
 
   public static Money franc(int amount) {
-    return new Franc(amount);
+    return new Money(amount, "CHF");
   }
 
   public boolean equals(Object object) {
