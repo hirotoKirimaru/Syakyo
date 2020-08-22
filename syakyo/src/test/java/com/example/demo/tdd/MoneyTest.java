@@ -83,4 +83,16 @@ public class MoneyTest {
     Money result = bank.reduce(fiveBucks.plus(tenFranc), "USD");
     assertEquals(Money.dollar(10), result);
   }
+
+  @Test
+  public void testSumPlusMoney(){
+    Expression fiveBucks = Money.dollar(5);
+    Expression tenFranc = Money.franc(10);
+    Bank bank = new Bank();
+    bank.addRate("CHF", "USD", 2);
+    // SUM使わずに書けるが、意図を示すためにわざと使用している。
+    Expression sum = new Sum(fiveBucks, tenFranc).plus(fiveBucks);
+    Money result = bank.reduce(sum, "USD");
+    assertEquals(Money.dollar(15), result);
+  }
 }
