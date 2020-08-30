@@ -1,4 +1,4 @@
-package com.example.demo.effectiveJava;
+package com.example.demo.effectiveJava.second_2;
 
 public class NutritionFacts {
   // ビルダーパターン

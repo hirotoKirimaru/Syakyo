@@ -1,4 +1,4 @@
-package com.example.demo.effectiveJava;
+package com.example.demo.effectiveJava.second_1;
 
 import java.io.BufferedReader;
 import java.io.IOException;

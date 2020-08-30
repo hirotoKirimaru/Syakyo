@@ -1,4 +1,4 @@
-package com.example.demo.effectiveJava;
+package com.example.demo.effectiveJava.second_2;
 
 import lombok.NoArgsConstructor;
 import lombok.Setter;
