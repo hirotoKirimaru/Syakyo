@@ -18,7 +18,7 @@ import java.util.EnumSet;
 /**
  * 第二章項目2 多くのコンストラクタパラメータに直面した時にはビルダーを検討する。
  */
-public class Builder {
+public class BuilderPattern {
 
   // テレスコーピング・コンストラクタ・パターン(うまく対応できない)
   public class NutritionFacts_1 {
@@ -69,7 +69,7 @@ public class Builder {
 
   }
 
-  public void _2(){
+  public void _2() {
     NutritionFacts_2 cocaCola = new NutritionFacts_2();
     cocaCola.setSerbingSize(240);
     cocaCola.setServings(8);
@@ -77,5 +77,4 @@ public class Builder {
     cocaCola.setSodium(35);
     cocaCola.setCarbohydrate(27);
   }
-
 }
