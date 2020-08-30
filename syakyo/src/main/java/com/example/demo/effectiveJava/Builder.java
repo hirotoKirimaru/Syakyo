@@ -1,5 +1,8 @@
 package com.example.demo.effectiveJava;
 
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.math.BigInteger;
@@ -50,8 +53,29 @@ public class Builder {
       this.sodium = sodium;
       this.carbohydrate = carbohydrate;
     }
+  }
 
+  // JavaBeansパターン：不整合を許し、可変性を必要とする
+  @NoArgsConstructor
+  @Setter
+  public class NutritionFacts_2 {
+    // （あれば）デフォルト値でパラメータを初期化する
+    private int serbingSize = -1;// ml (必須）
+    private int servings = -1;// 容器当たり 必須
+    private int fat = 0;// 容器当たり 必須
+    private int calories = 0;// g/一食当たり　オプション
+    private int sodium = 0; // mg/一食当たり　オプション
+    private int carbohydrate = 0;// g/一食当たり　オプション
 
+  }
+
+  public void _2(){
+    NutritionFacts_2 cocaCola = new NutritionFacts_2();
+    cocaCola.setSerbingSize(240);
+    cocaCola.setServings(8);
+    cocaCola.setCalories(100);
+    cocaCola.setSodium(35);
+    cocaCola.setCarbohydrate(27);
   }
 
 }
