@@ -14,8 +14,15 @@ public class HashTable implements Cloneable {
       this.next = next;
     }
 
+//    Entry deepCopy() {
+//      return new Entry(key, value, next == null ? null : next.deepCopy());
+//    }
+
+    // このEntryを先頭とするリンクリストをループしながらコピーする
     Entry deepCopy() {
-      return new Entry(key, value, next == null ? null : next.deepCopy());
+      Entry result = new Entry(key, value, next);
+      for (Entry p = result; p.next != null; p = p.next) p.next = new Entry(p.next.key, p.next.value, p.next.next);
+      return result;
     }
   }
 
