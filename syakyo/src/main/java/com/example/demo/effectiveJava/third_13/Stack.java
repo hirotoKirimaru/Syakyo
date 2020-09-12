@@ -1,4 +1,4 @@
-package com.example.demo.effectiveJava.second_13;
+package com.example.demo.effectiveJava.third_13;
 
 public class Stack implements Cloneable {
   private Object[] elements;

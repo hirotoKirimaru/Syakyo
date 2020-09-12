@@ -1,4 +1,4 @@
-package com.example.demo.effectiveJava.second_13;
+package com.example.demo.effectiveJava.third_13;
 
 public class HashTable implements Cloneable {
   private Entry[] buckets;

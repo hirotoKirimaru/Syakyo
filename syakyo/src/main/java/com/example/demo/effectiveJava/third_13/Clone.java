@@ -1,4 +1,4 @@
-package com.example.demo.effectiveJava.second_13;
+package com.example.demo.effectiveJava.third_13;
 
 /**
  * 13の結論。Cloneableやめろ。
