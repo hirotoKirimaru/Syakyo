@@ -1,6 +1,6 @@
 package com.example.demo.effectiveJava.second_13;
 
-public class PhoneNumber {
+public class PhoneNumber implements Cloneable {
 
   // 可変な状態への参照を持たないクラスのcloneメソッド
   // super.cloneはObjectなので、コンパイルするとObject型を返却するcloneメソッドが生成される。
