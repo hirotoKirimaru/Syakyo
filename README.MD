@@ -7,3 +7,6 @@
 https://amzn.to/2YmC7rC
 
 
+# Python3認定基礎試験
+
+https://exam.diveintocode.jp/exam
