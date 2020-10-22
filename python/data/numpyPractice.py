@@ -175,6 +175,14 @@ print(a)
 print(a[np.newaxis,:])
 print(a[:, np.newaxis])
 
+# グリッドデータの生成
+m = np.arange(0,4)
+print(m)
 
+n = np.arange(4, 7)
+print(n)
 
+xx, yy = np.meshgrid(m, n)
+print(xx)
+print(yy)
 
