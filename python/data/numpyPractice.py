@@ -133,3 +133,28 @@ print(np.linspace(0, 1, 5))
 print(np.linspace(0, np.pi, 21))
 
 
+# 要素間の差分
+print("*********************************")
+l = np.array([2, 2,6,1,3])
+print(np.diff(l))
+print(np.diff(l))
+
+print(a)
+print(a1)
+
+print(np.concatenate([a, a1]))
+
+print(b)
+b1 = np.array([[10], [20]])
+print(b1)
+
+print(np.concatenate([b, b1], axis=1))
+print(np.hstack([b, b1]))
+
+b2 = np.array([30, 60, 45])
+print(np.vstack([b, b2]))
+
+# 分割
+print("*********************************")
+
+
