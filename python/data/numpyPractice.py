@@ -67,7 +67,29 @@ print("*********************************")
 a1 = a
 print(a1)
 
+a1[1] = 5
+print(a1)
+print(a)
 
+a2 = a.copy()
+print(a2)
+a2[0] = 6
+print(a2)
+print(a)
+
+# pythonとnumpyでスライスした結果は異なる
+print("*********************************")
+py_list1= [0,1]
+py_list2 = py_list1[:]
+py_list2[0] = 2
+print(py_list1)
+print(py_list2)
+
+np_array1 = np.array([0, 1])
+np_array2 = np_array1[:]
+np_array2[0] = 2
+print(np_array1)
+print(np_array2)
 
 
 
