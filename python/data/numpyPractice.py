@@ -116,7 +116,20 @@ print(np.random.randn(4,2))
 
 # 同じ要素の数列を作る
 print("*********************************")
+print(np.zeros(3))
+print(np.zeros((2, 3)))
 
+print(np.ones(2))
+print(np.ones((3,4)))
+print(np.eye(3))
 
+print(np.full(3, 3.14))
+print(np.full((2,4), np.pi))
+
+print(np.nan)
+
+print(np.array([1, 2, np.nan]))
+print(np.linspace(0, 1, 5))
+print(np.linspace(0, np.pi, 21))
 
 
