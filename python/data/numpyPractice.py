@@ -21,3 +21,12 @@ print(c3)
 
 c4 = c2.flatten()
 print(c4)
+
+print(a.dtype)
+
+d = np.array([1,2], dtype=np.int16)
+print(d.dtype)
+
+print(d.astype(np.float16))
+print(d)
+
