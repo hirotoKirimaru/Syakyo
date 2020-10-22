@@ -152,9 +152,29 @@ print(np.concatenate([b, b1], axis=1))
 print(np.hstack([b, b1]))
 
 b2 = np.array([30, 60, 45])
-print(np.vstack([b, b2]))
+b3 = np.vstack([b, b2])
+print(b3)
 
 # 分割
 print("*********************************")
+
+first, second = np.hsplit(b3, [2])
+print(first)
+print(second)
+
+first1, second1 = np.vsplit(b3, [2])
+print(first1)
+print(second1)
+
+# 転置
+print(b)
+print(b.T)
+
+# じげんついか
+print(a)
+print(a[np.newaxis,:])
+print(a[:, np.newaxis])
+
+
 
 
