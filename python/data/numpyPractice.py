@@ -1,19 +1,19 @@
 import numpy as np
 
 
-a = np.array([1,2,3])
+a = np.array([1, 2, 3])
 print(a)
 print(type(a))
 print(a.shape)
 
-b = np.array([[1,2,3],[4,5,6]])
+b = np.array([[1, 2, 3], [4, 5, 6]])
 print(b)
 print(b.shape)
 
 c1 = np.arange(6)
 print(c1)
 
-c2 = c1.reshape((2,3))
+c2 = c1.reshape((2, 3))
 print(c2)
 
 c3 = c2.ravel()
@@ -24,7 +24,7 @@ print(c4)
 
 print(a.dtype)
 
-d = np.array([1,2], dtype=np.int16)
+d = np.array([1, 2], dtype=np.int16)
 print(d.dtype)
 
 print(d.astype(np.float16))
@@ -44,7 +44,7 @@ print(b[1, 0])
 print(b[:, 2])
 print(b[1, :])
 print(b[0, 1:])
-print(b[:, [0,2]])
+print(b[:, [0, 2]])
 
 
 # でーたさいとうにゅう
@@ -59,7 +59,7 @@ print(b)
 b[1, 2] = 7
 print(b)
 
-b[:,2] = 8
+b[:, 2] = 8
 print(b)
 
 # 深いコピー(copy)
@@ -79,7 +79,7 @@ print(a)
 
 # pythonとnumpyでスライスした結果は異なる
 print("*********************************")
-py_list1= [0,1]
+py_list1 = [0, 1]
 py_list2 = py_list1[:]
 py_list2[0] = 2
 print(py_list1)
@@ -90,6 +90,33 @@ np_array2 = np_array1[:]
 np_array2[0] = 2
 print(np_array1)
 print(np_array2)
+
+# 数列を返す
+print("*********************************")
+print(np.arange(10))
+print(np.arange(1, 11))
+print(np.arange(1, 11, 2))
+
+f = np.random.random((3, 2))
+print(f)
+
+np.random.seed(123)
+print(np.random.random((3, 2)))
+
+np.random.seed(123)
+print(np.random.rand(4,2))
+
+print(np.random.randint(1, 10))
+print(np.random.randint(1, 10, (3,3)))
+print(np.random.uniform(0.0, 5.0, size=(2, 3)))
+
+print(np.random.uniform(size=(4,3)))
+print(np.random.randn(4,2))
+
+
+# 同じ要素の数列を作る
+print("*********************************")
+
 
 
 
