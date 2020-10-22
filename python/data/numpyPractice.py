@@ -30,3 +30,26 @@ print(d.dtype)
 print(d.astype(np.float16))
 print(d)
 
+# インデックスとスライス
+print("*********************************")
+
+print(a)
+print(a[0])
+print(a[1:])
+print(a[-1])
+
+print(b)
+print(b[0])
+print(b[1, 0])
+print(b[:, 2])
+print(b[1, :])
+print(b[0, 1:])
+print(b[:, [0,2]])
+
+
+# でーたさいとうにゅう
+print("*********************************")
+
+
+
+
