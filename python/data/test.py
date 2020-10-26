@@ -18,3 +18,10 @@ plt.rcParams["font.family"] = "AppleGothic"
 plt.bar(df["国名"], df["人口/万人"])
 plt.ylabel("人口(万人)")
 plt.show()
+
+# import pandas as pd
+
+df = pd.DataFrame({"A":[1,2,3,4,5], "B":[6,7,8,9,10]})
+print(df.iloc[0])
+print(df.iloc[1])
+print(df.iloc[1]>3)
